@@ -1,0 +1,98 @@
+
+C:\Users\Hemanth Sai Teja>docker exec -it mc bash
+root@b52f94fe9518:/# mongosh
+Current Mongosh Log ID: 6389a3f39a3f20c7150a9156
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.0
+
+wave34>
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+wave34>
+
+root@b52f94fe9518:/# ^C
+root@b52f94fe9518:/#
+root@b52f94fe9518:/# mongosh
+Current Mongosh Log ID: 6389a44a17f053e84d9ae0c1
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.6.0
+Using MongoDB:          6.0.3
+Using Mongosh:          1.6.0
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2022-12-02T06:35:25.732+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2022-12-02T06:35:26.224+00:00: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+   2022-12-02T06:35:26.224+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+   2022-12-02T06:35:26.224+00:00: vm.max_map_count is too low
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+test> use track
+switched to db track
+track> db.track.find().pretty()
+[
+  {
+    _id: 2,
+    tname: 'H',
+    trating: 4.4,
+    artist: { aid: 1, aname: 'H' },
+    _class: 'com.example.domain.Track'
+  },
+  {
+    _id: 1,
+    tname: 'H',
+    trating: 4.4,
+    artist: { aid: 1, aname: 'H' },
+    _class: 'com.example.domain.Track'
+  }
+]
+track>
+
+-----------------------------------------------------------------------
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS D:\BackEnd\BEJ-C2-S3-Restful-MongoDb-Challenge-Track> docker build -t trackimg .
+[+] Building 5.2s (8/8) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                               0.0s
+ => => transferring dockerfile: 32B                                                                                                                                                0.0s
+ => [internal] load .dockerignore                                                                                                                                                  0.0s
+ => => transferring context: 2B                                                                                                                                                    0.0s
+ => [internal] load metadata for docker.io/library/openjdk:latest                                                                                                                  2.0s
+ => [1/3] FROM docker.io/library/openjdk@sha256:d2c0bd4450268777610fab98fcf3ee713e5f2cc07180969893d7d99483fafa66                                                                   0.0s
+ => [internal] load build context                                                                                                                                                  2.2s
+ => => transferring context: 23.69MB                                                                                                                                               2.1s
+ => CACHED [2/3] WORKDIR usr/lib                                                                                                                                                   0.0s
+ => [3/3] ADD ./target/BEJ-C2-S3-Restful-MongoDb-Challenge-Track-0.0.1-SNAPSHOT.jar /usr/lib/BEJ-C2-S3-Restful-MongoDb-Challenge-Track-0.0.1-SNAPSHOT.jar                          0.7s
+ => exporting to image                                                                                                                                                             0.2s
+ => => exporting layers                                                                                                                                                            0.2s
+ => => writing image sha256:830b6c8b3f1d48886bc7071f1af62d7c08acac2fa7780cb6cd1309ba1b9928bc                                                                                       0.0s
+ => => naming to docker.io/library/trackimg                                                                                                                                        0.0s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+PS D:\BackEnd\BEJ-C2-S3-Restful-MongoDb-Challenge-Track> docker run -p 8089:8089 --name track --network mynet trackimg
+
+-------------------------------------------------------------------
+application properties
+server.port=8089
+spring.data.mongodb.uri=mongodb://mc:27017/track
+server.error.include-message=always
+spring.jpa.hibernate.ddl_auto=create
+----------------------------------------------------------------
+Docker file
+FROM openjdk
+WORKDIR usr/lib
+ADD ./target/BEJ-C2-S3-Restful-MongoDb-Challenge-Track-0.0.1-SNAPSHOT.jar /usr/lib/BEJ-C2-S3-Restful-MongoDb-Challenge-Track-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java","-jar", "BEJ-C2-S3-Restful-MongoDb-Challenge-Track-0.0.1-SNAPSHOT.jar"]

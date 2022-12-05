@@ -1,0 +1,53 @@
+version: '3.9'
+services:
+  music-service2:
+    image: music_image2
+    container_name: music-service2
+    build: bej-c2-s3-restful-mongodb-challange-track-master/
+    restart: always
+    networks:
+      - mynetwork
+    ports:
+      - 8083:8083
+    depends_on:
+      - mongoService
+
+
+  mongoService:
+    image: mongo
+    container_name: mongoService2
+    ports:
+      - 27017:27017
+    networks:
+      - mynetwork
+
+  authentication-service2:
+    image: authentication_image2
+    container_name: authentication-service2
+    build: UserAuthentication/
+    restart: always
+    networks:
+      - mynetwork
+    ports:
+      - 8081:8081
+    depends_on:
+      - mysqlService
+
+
+  mysqlService:
+    image: mysql:latest
+    container_name: mysqlService2
+    networks:
+      - mynetwork
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USERNAME: root
+      MYSQL_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+
+networks:
+  mynetwork:
+    driver: bridge
