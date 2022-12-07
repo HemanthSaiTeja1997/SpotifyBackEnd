@@ -4,54 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7138044-8a05-44ff-b860-13712d3c18a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/UserAuthenticationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/domain/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/exception/UserAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/exception/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/service/SecurityTokenGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/service/SecurityTokenGeneratorImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserAuthentication/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/BejC2S3RestfulMongoDbChallengeTrackApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/controller/TrackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/dockerfile/processofdockerMongo" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Artist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Track.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/exception/TrackExistAlreadyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/exception/TrackNotExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/repository/TrackRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/ITrackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/TrackServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="e7138044-8a05-44ff-b860-13712d3c18a6" name="Changes" comment="added the code">
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/src/main/java/com/niit/apiGatewayDemo/ApiGatewayDemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/src/main/java/com/niit/apiGatewayDemo/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiGatewayDemo/src/test/java/com/niit/apiGatewayDemo/ApiGatewayDemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,7 +58,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/BackEnd/Music",
+    "last_opened_file_path": "D:/BackEnd/Music/apiGatewayDemo",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
@@ -85,6 +66,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\BackEnd\Music\apiGatewayDemo" />
       <recent name="D:\BackEnd\Music" />
     </key>
   </component>
@@ -97,6 +79,18 @@
       <option name="presentableId" value="Default" />
       <updated>1670260204288</updated>
     </task>
+    <task id="LOCAL-00001" summary="added the code">
+      <created>1670265952182</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670265952182</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the code" />
   </component>
 </project>

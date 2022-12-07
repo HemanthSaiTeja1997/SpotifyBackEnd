@@ -12,6 +12,7 @@
   <modules>
     <module>UserAuthentication</module>
     <module>bej-c2-s3-restful-mongodb-challange-track-master</module>
+    <module>apiGatewayDemo</module>
   </modules>
 
   <properties>
