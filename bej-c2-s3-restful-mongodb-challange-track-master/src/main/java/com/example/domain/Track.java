@@ -14,15 +14,19 @@ public class Track {
     @Id
     private int tid;
     private String tname;
+    private String email;
+    private String password;
     private double trating;
     private Artist artist;
 
     public Track() {
     }
 
-    public Track(int tid, String tname, double trating, Artist artist) {
+    public Track(int tid, String tname, String email, String password, double trating, Artist artist) {
         this.tid = tid;
         this.tname = tname;
+        this.email = email;
+        this.password = password;
         this.trating = trating;
         this.artist = artist;
     }
@@ -59,4 +63,19 @@ public class Track {
         this.artist = artist;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

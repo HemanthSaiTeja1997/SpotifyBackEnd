@@ -4,30 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7138044-8a05-44ff-b860-13712d3c18a6" name="Changes" comment="added the code">
-      <change afterPath="$PROJECT_DIR$/EurekaServer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/src/main/java/com/niit/EurekaServer/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EurekaServer/src/test/java/com/niit/EurekaServer/EurekaServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="e7138044-8a05-44ff-b860-13712d3c18a6" name="Changes" comment="added the code with EurekaServerApplication">
+      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/proxy/UserProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAuthentication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/UserAuthenticationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/UserAuthenticationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAuthentication/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apiGatewayDemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apiGatewayDemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apiGatewayDemo/src/main/java/com/niit/apiGatewayDemo/ApiGatewayDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/apiGatewayDemo/src/main/java/com/niit/apiGatewayDemo/ApiGatewayDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apiGatewayDemo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apiGatewayDemo/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/BejC2S3RestfulMongoDbChallengeTrackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/BejC2S3RestfulMongoDbChallengeTrackApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Track.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -101,11 +84,19 @@
       <option name="project" value="LOCAL" />
       <updated>1670399705350</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added the code with EurekaServerApplication">
+      <created>1670507494008</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670507494008</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the code" />
+    <MESSAGE value="added the code with EurekaServerApplication" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the code with EurekaServerApplication" />
   </component>
 </project>

@@ -9,6 +9,7 @@ package com.example.service;
 import com.example.domain.Track;
 import com.example.exception.TrackExistAlreadyException;
 import com.example.exception.TrackNotExistException;
+import com.example.proxy.UserProxy;
 import com.example.repository.TrackRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,17 +20,22 @@ import java.util.Optional;
 @Service
 public class TrackServiceImpl implements ITrackService {
     private TrackRepository trackRepository;
-
+private UserProxy userProxy;
     @Autowired
-    public TrackServiceImpl(TrackRepository trackRepository) {
+    public TrackServiceImpl(TrackRepository trackRepository, UserProxy userProxy) {
         this.trackRepository = trackRepository;
+        this.userProxy = userProxy;
     }
+
+
+
 
     @Override
     public Track saveTrack(Track track) throws TrackExistAlreadyException {
         if (trackRepository.findById(track.getTid()).isPresent()) {
             throw new TrackExistAlreadyException();
         }
+        userProxy.saveUser(track);
         return trackRepository.save(track);
     }
 
