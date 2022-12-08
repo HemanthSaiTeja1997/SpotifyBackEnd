@@ -57,6 +57,15 @@ services:
       - mynetwork
     ports:
       - 9005:9005
+  eureka-service2:
+    container_name: containerEureka2
+    build: EurekaServer/
+    restart: always
+    networks:
+      - mynetwork
+    ports:
+      - 8761:8761
+
 
 
 networks:
