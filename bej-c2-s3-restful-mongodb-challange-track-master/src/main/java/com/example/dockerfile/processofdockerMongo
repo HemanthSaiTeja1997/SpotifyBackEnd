@@ -38,26 +38,26 @@ For mongosh info see: https://docs.mongodb.com/mongodb-shell/
    To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
 ------
 
-test> use track
-switched to db track
-track> db.track.find().pretty()
+test> use spotifyUser
+switched to db spotifyUser
+spotifyUser> db.spotifyUser.find().pretty()
 [
   {
     _id: 2,
     tname: 'H',
     trating: 4.4,
-    artist: { aid: 1, aname: 'H' },
-    _class: 'com.example.domain.Track'
+    playList: { aid: 1, aname: 'H' },
+    _class: 'com.example.domain.SpotifyUser'
   },
   {
     _id: 1,
     tname: 'H',
     trating: 4.4,
-    artist: { aid: 1, aname: 'H' },
-    _class: 'com.example.domain.Track'
+    playList: { aid: 1, aname: 'H' },
+    _class: 'com.example.domain.SpotifyUser'
   }
 ]
-track>
+spotifyUser>
 
 -----------------------------------------------------------------------
 Copyright (C) Microsoft Corporation. All rights reserved.
@@ -82,12 +82,12 @@ PS D:\BackEnd\BEJ-C2-S3-Restful-MongoDb-Challenge-Track> docker build -t trackim
  => => naming to docker.io/library/trackimg                                                                                                                                        0.0s
 
 Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
-PS D:\BackEnd\BEJ-C2-S3-Restful-MongoDb-Challenge-Track> docker run -p 8089:8089 --name track --network mynet trackimg
+PS D:\BackEnd\BEJ-C2-S3-Restful-MongoDb-Challenge-Track> docker run -p 8089:8089 --name spotifyUser --network mynet trackimg
 
 -------------------------------------------------------------------
 application properties
 server.port=8089
-spring.data.mongodb.uri=mongodb://mc:27017/track
+spring.data.mongodb.uri=mongodb://mc:27017/spotifyUser
 server.error.include-message=always
 spring.jpa.hibernate.ddl_auto=create
 ----------------------------------------------------------------

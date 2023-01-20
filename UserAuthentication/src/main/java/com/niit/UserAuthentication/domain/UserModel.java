@@ -10,9 +10,7 @@ public class UserModel
     private String email;
     private String password;
 
-    public UserModel()
-    {
-
+    public UserModel() {
     }
 
     public UserModel(String email, String password) {

@@ -4,12 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7138044-8a05-44ff-b860-13712d3c18a6" name="Changes" comment="added the code with EurekaServerApplication">
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/proxy/UserProxy.java" afterDir="false" />
+    <list default="true" id="e7138044-8a05-44ff-b860-13712d3c18a6" name="Changes" comment="added the code with microservice communication with feign client">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/ISpotifyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/01-Shippuuden.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/02-Heaven-Shaking Event.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/03-Homecoming.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/04-Experienced Many Battles.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/05-Lightning Speed.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/BejC2S3RestfulMongoDbChallengeTrackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/BejC2S3RestfulMongoDbChallengeTrackApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Track.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/UserAuthenticationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/UserAuthenticationApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/domain/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/domain/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apiGatewayDemo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apiGatewayDemo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/controller/TrackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/controller/SpotifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/dockerfile/processofdockerMongo" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/dockerfile/processofdockerMongo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Artist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/SpotifyUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/proxy/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/proxy/UserProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/repository/TrackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/repository/TrackRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/ITrackService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/TrackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/SpotifyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,18 +38,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -43,23 +70,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/BackEnd/Music/EurekaServer",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/BackEnd/Music/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\BackEnd\Music\bej-c2-s3-restful-mongodb-challange-track-master\src\main\resources\songs" />
       <recent name="D:\BackEnd\Music\EurekaServer" />
       <recent name="D:\BackEnd\Music" />
       <recent name="D:\BackEnd\Music\apiGatewayDemo" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BejC2S3RestfulMongoDbChallengeTrackApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.BejC2S3RestfulMongoDbChallengeTrackApplication" />
+      <module name="BEJ-C2-S3-Restful-MongoDb-Challenge-Track" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BejC2S3RestfulMongoDbChallengeTrackApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -91,12 +139,20 @@
       <option name="project" value="LOCAL" />
       <updated>1670507494008</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added the code with microservice communication with feign client">
+      <created>1670509052110</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670509052110</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added the code" />
     <MESSAGE value="added the code with EurekaServerApplication" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the code with EurekaServerApplication" />
+    <MESSAGE value="added the code with microservice communication with feign client" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the code with microservice communication with feign client" />
   </component>
 </project>

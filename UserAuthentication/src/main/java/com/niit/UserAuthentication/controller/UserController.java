@@ -15,8 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
-@RequestMapping("/api/v2")
+
 @RestController
+@RequestMapping("/api/v2")
 public class UserController
 {
     private UserService userService;
@@ -37,11 +38,12 @@ public class UserController
 
     @PostMapping("/login")
     public ResponseEntity<?> loginCheck(@RequestBody UserModel user ) throws UserNotFoundException {
-        Map<String, String> map=null;
+        Map<String, String> map = null;
         try{
             UserModel result = userService.loginCheck(user.getEmail(),user.getPassword());
-
-            map= securityTokenGenerator.generateToken(result);
+            if(result.getEmail().equals(user.getEmail())) {
+                map = securityTokenGenerator.generateToken(result);
+            }
             return new ResponseEntity<>(map,HttpStatus.OK);
         }
         catch(UserNotFoundException ex){
