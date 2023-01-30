@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.domain.SongList;
 import com.example.domain.SpotifyUser;
 import com.example.exception.TrackExistAlreadyException;
 import com.example.exception.TrackNotExistException;
@@ -17,7 +18,11 @@ public interface ISpotifyService {
     Optional<SpotifyUser> getTrackById(int id);
     List<SpotifyUser> findByEmailAndPassword(String email, String password);
 
+    SpotifyUser saveSongsToSpotify(SongList songList,int uid);
 
+   List<SongList> getAllSongsFromSpotify(int uid) ;
+
+    SpotifyUser deleteSongsFromSpotify(int uid,int songId);
 
 
 }

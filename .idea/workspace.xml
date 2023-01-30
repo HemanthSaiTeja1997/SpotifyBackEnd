@@ -4,31 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7138044-8a05-44ff-b860-13712d3c18a6" name="Changes" comment="added the code with microservice communication with feign client">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/ISpotifyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/01-Shippuuden.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/02-Heaven-Shaking Event.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/03-Homecoming.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/04-Experienced Many Battles.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/songs/05-Lightning Speed.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e7138044-8a05-44ff-b860-13712d3c18a6" name="Changes" comment="changed the code with spotify feilds">
+      <change afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/SongList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/UserAuthenticationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/UserAuthenticationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/domain/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/UserAuthentication/src/main/java/com/niit/UserAuthentication/domain/UserModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apiGatewayDemo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/apiGatewayDemo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/controller/TrackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/controller/SpotifyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/dockerfile/processofdockerMongo" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/dockerfile/processofdockerMongo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Artist.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/Track.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/SpotifyUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/proxy/UserProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/proxy/UserProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/controller/SpotifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/controller/SpotifyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/SpotifyUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/domain/SpotifyUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/repository/TrackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/repository/TrackRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/ITrackService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/TrackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/SpotifyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/ISpotifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/ISpotifyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/SpotifyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bej-c2-s3-restful-mongodb-challange-track-master/src/main/java/com/example/service/SpotifyServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,13 +129,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670509052110</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed the code with spotify feilds">
+      <created>1674200205490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674200205490</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added the code" />
     <MESSAGE value="added the code with EurekaServerApplication" />
     <MESSAGE value="added the code with microservice communication with feign client" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the code with microservice communication with feign client" />
+    <MESSAGE value="changed the code with spotify feilds" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the code with spotify feilds" />
   </component>
 </project>

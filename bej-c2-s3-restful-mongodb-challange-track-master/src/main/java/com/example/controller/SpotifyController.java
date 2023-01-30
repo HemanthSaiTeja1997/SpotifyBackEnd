@@ -6,6 +6,7 @@
 
 package com.example.controller;
 
+import com.example.domain.SongList;
 import com.example.domain.SpotifyUser;
 import com.example.exception.TrackExistAlreadyException;
 import com.example.exception.TrackNotExistException;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1")
 public class SpotifyController {
     private ISpotifyService iSpotifyService;
+    private ResponseEntity<?> responseEntity;
 
     @Autowired
     public SpotifyController(ISpotifyService iSpotifyService) {
@@ -62,4 +64,45 @@ public class SpotifyController {
     public ResponseEntity<?> fetch4(@PathVariable String email, @PathVariable String password) {
         return new ResponseEntity<>(iSpotifyService.findByEmailAndPassword(email, password), HttpStatus.CREATED);
     }
+
+
+
+    @PostMapping("/songlist/addsongs/{uid}")
+    public ResponseEntity<?> saveSongsToSpotify(@RequestBody SongList songList, @PathVariable int uid) {
+//        try {
+        System.out.println("uid " + uid);
+
+        responseEntity = new ResponseEntity<>(iSpotifyService.saveSongsToSpotify(songList,uid), HttpStatus.CREATED);
+//        } catch (RestaurantNotFoundException e) {
+//            System.out.println(e);
+//            throw new RestaurantNotFoundException();
+//        }
+
+        return responseEntity;
+    }
+
+    @GetMapping("/songlist/{uid}")
+    public ResponseEntity<?> getAllSongsFromSpotify(@PathVariable int uid) {
+//        try {
+        System.out.println("uid " + uid);
+        responseEntity = new ResponseEntity<>(iSpotifyService.getAllSongsFromSpotify(uid), HttpStatus.OK);
+//        } catch (RestaurantNotFoundException e) {
+//            throw new RestaurantNotFoundException();
+//        }
+        return responseEntity;
+    }
+
+
+    @DeleteMapping("/songlist/{uid}/{songId}")
+    public ResponseEntity<?> deleteSongFromSpotify(@PathVariable int uid, @PathVariable int songId) {
+//        try {
+        responseEntity = new ResponseEntity<>(iSpotifyService.deleteSongsFromSpotify(uid, songId), HttpStatus.OK);
+//        } catch (RestaurantNotFoundException | MenuListNotFoundException m) {
+//            throw new MenuListNotFoundException();
+//        }
+        return responseEntity;
+    }
+
+
+
 }

@@ -10,7 +10,7 @@ import java.util.List;
 @Repository
 public interface TrackRepository extends MongoRepository<SpotifyUser, Integer> {
    List<SpotifyUser> findByEmailAndPassword(String email, String password);
-
+   SpotifyUser findByUid(int id);
 
 
 

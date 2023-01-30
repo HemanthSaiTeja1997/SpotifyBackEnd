@@ -9,6 +9,8 @@ package com.example.domain;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Document
 public class SpotifyUser {
     @Id
@@ -17,31 +19,20 @@ public class SpotifyUser {
     private Long mnumber;
     private String email;
     private String password;
-    private String pname;
-
-    private String firstsong;
-    private String secondsong;
-    private String thirdsong;
-    private String fourthosong;
-    private String fivthsong;
+private List<SongList> songLists;
 
 
 
     public SpotifyUser() {
     }
 
-    public SpotifyUser(int uid, String uname, Long mnumber, String email, String password, String pname, String firstsong, String secondsong, String thirdsong, String fourthosong, String fivthsong) {
+    public SpotifyUser(int uid, String uname, Long mnumber, String email, String password, List<SongList> songLists) {
         this.uid = uid;
         this.uname = uname;
         this.mnumber = mnumber;
         this.email = email;
         this.password = password;
-        this.pname = pname;
-        this.firstsong = firstsong;
-        this.secondsong = secondsong;
-        this.thirdsong = thirdsong;
-        this.fourthosong = fourthosong;
-        this.fivthsong = fivthsong;
+        this.songLists = songLists;
     }
 
     public int getUid() {
@@ -84,52 +75,12 @@ public class SpotifyUser {
         this.password = password;
     }
 
-    public String getPname() {
-        return pname;
+    public List<SongList> getSongLists() {
+        return songLists;
     }
 
-    public void setPname(String pname) {
-        this.pname = pname;
-    }
-
-    public String getFirstsong() {
-        return firstsong;
-    }
-
-    public void setFirstsong(String firstsong) {
-        this.firstsong = firstsong;
-    }
-
-    public String getSecondsong() {
-        return secondsong;
-    }
-
-    public void setSecondsong(String secondsong) {
-        this.secondsong = secondsong;
-    }
-
-    public String getThirdsong() {
-        return thirdsong;
-    }
-
-    public void setThirdsong(String thirdsong) {
-        this.thirdsong = thirdsong;
-    }
-
-    public String getFourthosong() {
-        return fourthosong;
-    }
-
-    public void setFourthosong(String fourthosong) {
-        this.fourthosong = fourthosong;
-    }
-
-    public String getFivthsong() {
-        return fivthsong;
-    }
-
-    public void setFivthsong(String fivthsong) {
-        this.fivthsong = fivthsong;
+    public void setSongLists(List<SongList> songLists) {
+        this.songLists = songLists;
     }
 
     @Override
@@ -140,12 +91,7 @@ public class SpotifyUser {
                 ", mnumber=" + mnumber +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", pname='" + pname + '\'' +
-                ", firstsong='" + firstsong + '\'' +
-                ", secondsong='" + secondsong + '\'' +
-                ", thirdsong='" + thirdsong + '\'' +
-                ", fourthosong='" + fourthosong + '\'' +
-                ", fivthsong='" + fivthsong + '\'' +
+                ", songLists=" + songLists +
                 '}';
     }
 }
